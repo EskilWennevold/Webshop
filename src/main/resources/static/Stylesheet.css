@@ -1,0 +1,70 @@
+body{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    padding: 8px;
+    max-width: 800px;
+    width: fit-content;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.container table tbody tr{
+    text-align: center;
+
+}
+.container table{
+    width: 500px;
+
+}
+.container2{
+    padding: 8px;
+    width: fit-content;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.container2 table tbody tr{
+    text-align: center;
+}
+.greenButton{
+    outline: none;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    padding: 16px 30px;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+}
+.redButton{
+    outline: none;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    padding: 16px 30px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+}
+.blueButton{
+    outline: none;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    padding: 16px 30px;
+    border-radius: 30px;
+    background-color: blue;
+    color: white;
+}

@@ -3,20 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Webshop</title>
+    <link rel="stylesheet" href="/Stylesheet.css"/>
+<style>
+    .greenButton{
+        outline: none;
+        display: block;
+        border: 0;
+        font-size: 16px;
+        line-height: 1;
+        padding: 16px 30px;
+        border-radius: 30px;
+        background-color: green;
+        color: white;
+    }
+    .redButton{
+        outline: none;
+        display: block;
+        border: 0;
+        font-size: 16px;
+        line-height: 1;
+        padding: 16px 30px;
+        border-radius: 30px;
+        background-color: red;
+        color: white;
+
+    }
+    .blueButton{
+        outline: none;
+        display: block;
+        border: 0;
+        font-size: 16px;
+        line-height: 1;
+        padding: 16px 30px;
+        border-radius: 30px;
+        background-color: blue;
+        color: white;
+
+    }
+</style>
 </head>
 <body>
-    <h1>Webshop</h1>
-    <a href="/createProduct">
-        <button>
-            Create Product
-        </button>
-    </a>
+<h1>Webshop</h1>
+    <div class="container">
+            <a href="/createProduct">
+                <button class="greenButton">
+                    Tilføj Produkt
+                </button>
+            </a>
     <table>
         <thead>
         <tr>
-            <th>Product ID</th>
-            <th>Product Name</th>
-            <th>Price</th>
+            <th>Produkt ID</th>
+            <th>Produkt Navn</th>
+            <th>Pris</th>
             <th></th>
             <th></th>
         </tr>
@@ -29,21 +68,21 @@
 
             <td>
                 <a th:href="@{'/viewProduct/'+${product.id}}">
-                    <button>
+                    <button class="blueButton">
                         Se Info
                     </button>
                 </a>
             </td>
             <td>
                 <a th:href="@{'/updateProduct/'+${product.id}}">
-                    <button>
+                    <button class="blueButton">
                         Opdater
                     </button>
                 </a>
             </td>
             <td>
                 <a th:href="@{'/deleteProduct/'+${product.id}}">
-                    <button>
+                    <button class="redButton">
                         Slet
                     </button>
                 </a>
@@ -51,6 +90,6 @@
         </tr>
         </tbody>
     </table>
-
+    </div>
 </body>
 </html>
